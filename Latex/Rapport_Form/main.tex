@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}      % <-- needed for including figures
+\usepackage{float}         % <-- optional, allows [H] placement
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{hyperref}      % <-- if you want clickable links
+\usepackage[sorting=none]{biblatex}  % Imports biblatex package
+\addbibresource{sources.bib} % Import the bibliography file
+
+\title{New Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Hello, world!
+
+\printbibliography[heading=bibnumbered]
+\end{document}
