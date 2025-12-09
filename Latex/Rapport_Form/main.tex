@@ -6,15 +6,29 @@
 \usepackage{hyperref}      % <-- if you want clickable links
 \usepackage[sorting=none]{biblatex}  % Imports biblatex package
 \addbibresource{sources.bib} % Import the bibliography file
+\usepackage{dsfont}
+\usepackage{color}
+\usepackage{xparse}
+\usepackage{listings}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{cleveref}
+\usepackage{siunitx}
+\usepackage{pdfpages}
 
-\title{New Document}
-\author{Your Name}
-\date{\today}
+% --- Egen lille helper ---
+\NewDocumentCommand{\codeword}{v}{\texttt{\textcolor{blue}{#1}}}
+
+% --- Redigerbare felter ---
+\newcommand{\coursename}{Course}
+\newcommand{\institution}{University of Southern Denmark (SDU)}
+\newcommand{\submissiondate}{19/12-2025}
 
 \begin{document}
-\maketitle
 
-Hello, world!
+\input{sections/frontpage}
+
 
 \printbibliography[heading=bibnumbered]
 \end{document}

@@ -1,6 +1,4 @@
 /home/kasper/Documents/Templates/Pico/build/CMakeFiles/main.dir
-/home/kasper/Documents/Templates/Pico/build/CMakeFiles/picotoolForceReconfigure.dir
-/home/kasper/Documents/Templates/Pico/build/CMakeFiles/picotoolBuild.dir
 /home/kasper/Documents/Templates/Pico/build/CMakeFiles/edit_cache.dir
 /home/kasper/Documents/Templates/Pico/build/CMakeFiles/rebuild_cache.dir
 /home/kasper/Documents/Templates/Pico/build/pico-sdk/CMakeFiles/edit_cache.dir
