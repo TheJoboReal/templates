@@ -8,6 +8,10 @@ add_executable(main
     main.c
 )
 
+include_directories(
+    ./inc
+)
+
 target_link_libraries(main
     pico_stdlib
 )
