@@ -1,39 +1,24 @@
+set(PICO_BOARD pico2)
 cmake_minimum_required(VERSION 3.13)
 
-set(PICO_BOARD pico2)
-
+set(PICO_SDK_FETCH_FROM_GIT true)
+set(PICOTOOL_FORCE_FETCH_FROM_GIT true)
 include(pico_sdk_import.cmake)
 
 project(main C CXX ASM)
-
 pico_sdk_init()
 
+
+include_directories(
+    ./inc
+)
+
 add_executable(main
-    main.c
-)
-
-include_directories(
-    ./inc
-)
-
-add_subdirectory(lib/Config)
-add_subdirectory(lib/e-Paper)
-add_subdirectory(lib/Fonts)
-add_subdirectory(lib/GUI)
-
-include_directories(
-    ./lib/Config
-    ./lib/GUI
-    ./inc
+  main.c
 )
 
 target_link_libraries(main
-    ePaper
-    GUI
-    Fonts
-    Config
     pico_stdlib
-    hardware_spi
     hardware_pio
 )
 

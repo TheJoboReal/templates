@@ -9,11 +9,22 @@
 #include "tusb.h"
 #include <stdio.h>
 
+static bool led_state = false;
+
 void led_task() {
-  static bool led_state = false;
   gpio_put(PICO_DEFAULT_LED_PIN, led_state);
   led_state = !led_state;
 }
+
+void init_led(void) {
+  gpio_init(PICO_DEFAULT_LED_PIN);
+  gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
+}
+
+void hello_task() {
+  printf("Hello\n");
+}
+
 
 // Array of tasks for the scheduler and their frequencies in milliseconds
 //
@@ -21,16 +32,13 @@ void led_task() {
 // as the scheduler runs.
 static Task TASKS[] = {
     CREATE_TASK(led_task, 200),
-
-#if PRINT_EVENTS_OVER_SERIAL
-    CREATE_TASK(serial_task, 3),
-#endif
-
+    CREATE_TASK(hello_task, 300),
 };
 
 int main() {
   stdio_init_all();
   tusb_init();
+  init_led();
   sleep_ms(500);
 
   Scheduler scheduler;
@@ -45,6 +53,7 @@ int main() {
   }
 
   while (true) {
+    tud_task();
     scheduler_poll(&scheduler);
   }
 }
