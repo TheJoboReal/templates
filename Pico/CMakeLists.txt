@@ -20,6 +20,7 @@ add_executable(main
 target_link_libraries(main
     pico_stdlib
     hardware_pio
+    hardware_adc
 )
 
 pico_enable_stdio_usb(main 1)
