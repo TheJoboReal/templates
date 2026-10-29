@@ -1,0 +1,60 @@
+[
+  {
+    "added_include_path": "/home/kasper/.arduino15/packages/esp32/hardware/esp32/3.3.12/cores/esp32"
+  },
+  {
+    "added_include_path": "/home/kasper/.arduino15/packages/esp32/hardware/esp32/3.3.12/variants/uPesy_esp32_wroom_devkit"
+  },
+  {
+    "compile": {
+      "source_path": "/home/kasper/Documents/templates/Arduino/FreeRTOS/build/sketch/FreeRTOS.ino.cpp.merged",
+      "depfile_path": "/home/kasper/Documents/templates/Arduino/FreeRTOS/build/sketch/FreeRTOS.ino.cpp.merged.libsdetect.d"
+    },
+    "compile_task": {
+      "args": [
+        "/home/kasper/.arduino15/packages/esp32/tools/esp-x32/2601/bin/xtensa-esp32-elf-g++",
+        "-c",
+        "@/home/kasper/.arduino15/packages/esp32/tools/esp32-libs/3.3.12/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=240000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_UPESY_WROOM",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"UPESY_WROOM\"",
+        "-DARDUINO_VARIANT=\"uPesy_esp32_wroom_devkit\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"linux\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:uPesy_wroom:DebugLevel=none,UploadSpeed=921600,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,EraseFlash=all\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@/home/kasper/.arduino15/packages/esp32/tools/esp32-libs/3.3.12/flags/defines",
+        "-I/home/kasper/Documents/templates/Arduino/FreeRTOS",
+        "-iprefix",
+        "/home/kasper/.arduino15/packages/esp32/tools/esp32-libs/3.3.12/include/",
+        "@/home/kasper/.arduino15/packages/esp32/tools/esp32-libs/3.3.12/flags/includes",
+        "-I/home/kasper/.arduino15/packages/esp32/tools/esp32-libs/3.3.12/qio_qspi/include",
+        "-I/home/kasper/.arduino15/packages/esp32/hardware/esp32/3.3.12/cores/esp32",
+        "-I/home/kasper/.arduino15/packages/esp32/hardware/esp32/3.3.12/variants/uPesy_esp32_wroom_devkit",
+        "@/home/kasper/Documents/templates/Arduino/FreeRTOS/build/build_opt.h",
+        "@/home/kasper/Documents/templates/Arduino/FreeRTOS/build/file_opts",
+        "/home/kasper/Documents/templates/Arduino/FreeRTOS/build/sketch/FreeRTOS.ino.cpp.merged",
+        "-o",
+        "/dev/null",
+        "-MMD",
+        "-MF",
+        "/home/kasper/Documents/templates/Arduino/FreeRTOS/build/sketch/FreeRTOS.ino.cpp.merged.libsdetect.d"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  }
+]

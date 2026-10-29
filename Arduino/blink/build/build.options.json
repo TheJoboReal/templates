@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "../..,../..",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:uPesy_wroom:DebugLevel=none,UploadSpeed=921600,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,EraseFlash=all",
+  "hardwareFolders": "/home/kasper/.arduino15/packages/esp32/hardware/esp32/3.3.12,/home/kasper/.arduino15/packages/esp32/hardware/esp32/3.3.12",
+  "otherLibrariesFolders": "/home/kasper/Arduino/libraries",
+  "sketchLocation": "/home/kasper/Documents/temp/ardu/test"
+}
